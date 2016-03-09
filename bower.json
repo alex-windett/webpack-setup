@@ -1,0 +1,21 @@
+{
+  "name": "lunch_app",
+  "description": "",
+  "main": "src/index.js",
+  "authors": [
+    "Alex Windett <alex@bigfish.co.uk>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "~6.2.0"
+  }
+}
