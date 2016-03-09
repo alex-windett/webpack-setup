@@ -23,7 +23,7 @@ const config = {
     },
     resolve: {
         root: path.resolve(__dirname),
-        modulesDirectories: ['./src', 'node_modules', './bower_components'],
+        modulesDirectories: ['./src', './node_modules', './bower_components'],
         extensions: ['', '.js', '.scss', '.sass'],
         alias: {}
     },
@@ -38,7 +38,7 @@ const config = {
                 }
             },
             {
-                test: /\.sass$/,
+                test: /\.scss$/,
                 loader: ExtractTextPlugin.extract(
                     'style', // backup loader when not building .css file
                     'css!sass' // loaders to preprocess CSS
@@ -58,7 +58,7 @@ const config = {
         includePaths: [
             path.resolve(__dirname), path.resolve(__dirname, './src'),
             path.join(__dirname, 'node_modules'),
-            path.join(__dirname, './bower_components/foundation/scss')
+            path.join(__dirname, './bower_components')
         ]
     },
     devtool: "source-map", // or "inline-source-map"
